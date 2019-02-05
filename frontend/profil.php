@@ -35,36 +35,40 @@
         <h3>Jammingup Studio Squad</h3>
         <p>Team Jammingup Studio yang berdedikasi dalam mendirikan Jammingup Studio</p>
       </div>
+       <?php
+                  require("../control/squad.php");
+                  $Squad = new Library();
+                  $show = $Squad->showArt();
+                    while($data = $show->fetch(PDO::FETCH_OBJ))
+                    {
+                        echo'
       <div class="row">
-        <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+        <div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="text-center">
-            <img src="asset_frontend/img/14.png" width="40%" alt="">
-            <h2>Application</h2>
-            <h4>Dekstop | Game | Website | Mobile | Design</h4>
+            <img class="img-sm rounded-circle mb-4 mb-md-8" src="j_article/article-picture/'.$data->twibbon.'">
+            <h2>'.$data->nama.'</h2>
+            <h4>'.$data->ttl.'</h4>
             <p>Kami memberikan sebuah pelayanan dalam pembuatan aplikasi dekstop, Game
             , Website, Design Animasi dan Mobile Aps</p>
           </div>
         </div>
-        <div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+
+         ';
+                            }
+                        ?>  
+       <!--  <div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="text-center">
-            <img src="asset_frontend/img/16.png" width="40%" alt="">
-            <h2>Documentation</h2>
-            <h4>Tutorial | Tips | Basic Program</h4>
-            <p>Kami memberikan Pelayanan Tutorial dalam pembuatan aplikasi dan Design Animasi, kami berikan secara Free dan Premium</p>
+           
           </div>
         </div>
         <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="text-center">
-            <img src="asset_frontend/img/11.png" width="40%" alt="">
-            <h2>Workshop</h2>
-            <h4>Basic Programing | Design</h4>
-            <p>Untuk Member Jammingup Studio akan ada Workshop Free setiap 3 Bulan Sekali dan Premium
-            untuk yang ingin belajar Basic Programin dan design dengan schedule yang dibuat
-            sendiri.</p>
+           
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+</footer>
 
 

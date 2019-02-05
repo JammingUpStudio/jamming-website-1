@@ -20,7 +20,10 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+
 </style>
+
 
 <div class="slider">
     <div id="about-slider">
@@ -196,10 +199,11 @@
         </div>
       </div>
     </div>
+  </div>
    
 
 
-  <footer>
+
     <div id="contact">
       <div class="container">
         <div class="text-center">
@@ -213,3 +217,11 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+

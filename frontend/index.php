@@ -51,8 +51,8 @@
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php?halaman=home"><b>Home</b></a></li>
-             <li><a href="index.php?halaman=j.Profile "><b>J.Profile</b></a></li>
-            <li><a href=""><b>J.Article</b></a></li>
+             <li><a href="index.php?halaman=j.Profile"><b>J.Profile</b></a></li>
+            <li><a href="index.php?halaman=j.Article"><b>J.Article</b></a></li>
             <li><a href=""><b>J.Document</b></a></li>
             <li><a href=""><b>About</b></a></li>
           </ul>
@@ -69,11 +69,14 @@
       include 'home.php';
      if ($halaman=='j.Profile')
       include 'profil.php';
+      if ($halaman=='j.Article')
+      include 'artikel.php';
+
   ?>
   <!--/header-->
  
     <!--/#contact-->
-    <footer>
+    <footer style="background-color: black;">
    
     <div class="container">
       <div class="sub-footer">
